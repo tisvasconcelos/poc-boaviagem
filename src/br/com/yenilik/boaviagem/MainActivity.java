@@ -2,6 +2,7 @@ package br.com.yenilik.boaviagem;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
@@ -34,7 +35,9 @@ public class MainActivity extends Activity {
     	String senhaInformada = senha.getText().toString();
     	
     	if ("leitor".equals(usuarioInformado) && "123".equals(senhaInformada)) {
-			// vai para outra activity
+
+    		startActivity(new Intent(this, DashboardActivity.class));
+    		
 		} else {
 			String mensagemErro = getString(R.string.erro_autenticacao);
 			
