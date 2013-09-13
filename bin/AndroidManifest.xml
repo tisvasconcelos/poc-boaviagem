@@ -34,6 +34,14 @@
             </intent-filter>
         </activity>
         
+        <activity android:name="br.com.yenilik.boaviagem.ViagemActivity" />
+        
+        <activity android:name="br.com.yenilik.boaviagem.GastoActivity" />
+        
+        <activity android:name="br.com.yenilik.boaviagem.ViagemListActivity" />
+        
+        <activity android:name="br.com.yenilik.boaviagem.GastoListActivity" />
+        
     </application>
 
 </manifest>
